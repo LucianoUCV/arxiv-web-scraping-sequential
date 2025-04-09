@@ -30,7 +30,7 @@ git clone https://github.com/LucianoUCV/arxiv-web-scraping-sequential.git
 ```
 2. Navigate to the project directory: <br>
 ```bash
-cd arxiv-web-scraper
+cd arxiv-web-scraping-sequential
 ```
 
 3. Run the script:<br>
