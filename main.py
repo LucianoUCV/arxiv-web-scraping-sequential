@@ -43,7 +43,8 @@ def scrape_arxiv(query, amount):
             authors = [a.text.strip() for a in result.find("p", {"class": "authors"}).find_all("a")]
             abstract = result.find("span", attrs={"class": "abstract-full"}).text.strip().replace("\n", "")[
                        :-7].strip()
-            pdfUrl = result.div.p.span.a['href']
+            pdfLink = result.find("p", class_="list-title").find("a", string="pdf")
+            pdfUrl = f"{pdfLink['href']}" if pdfLink else None
 
             articles.append({
                 "title": title,
