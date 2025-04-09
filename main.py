@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import os
 import re
+import time
 
 # Automatically creates the output folder which will store the papers in a PDF format
 def create_output_folder(folder_name = "pdfs"):
@@ -88,10 +89,16 @@ def save_and_download(articles, folder = "pdfs", metadata_file="articles.json"):
 
 
 def main():
+    start_time = time.time()
+
     query = input("What subject sparks your interest?:\n")
     amount = int(input(f"How many papers matching \"{query}\" would you like?:\n"))
     articles = scrape_arxiv(query, amount)
     save_and_download(articles)
+
+    end_time = time.time()
+    total_time = end_time - start_time
+    print(f"Total time: {total_time}")
 
 if __name__ == "__main__":
     main()
