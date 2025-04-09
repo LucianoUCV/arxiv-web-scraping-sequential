@@ -45,5 +45,5 @@ python main.py
 
 ---
 
-### The attached Google Doc includes machine info, output and execution time with a nice graph
+### The [Google Doc](https://docs.google.com/document/d/1NvsXqRVfJSIbVowtc2CUaf6xblmApB0sx64_y3_wFlk/edit?usp=sharing) includes more useful information:
 
