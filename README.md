@@ -15,7 +15,7 @@ This is a Python project that allows you to scrape research papers from arXiv.or
 
 * **Programming Language**: Python 3.
 
-* **External libraries**: `requests`, `bs4` (BeautifulSoup), `os`, `json`, `re`  
+* **External libraries**: `requests`, `bs4` (BeautifulSoup), `os`, `json`, `re`, `time`
 
 
 ## Project Structure
@@ -26,7 +26,7 @@ This is a Python project that allows you to scrape research papers from arXiv.or
 ## How to use
 1. Clone the repository to your local machine: <br>
 ```bash
-git clone https://github.com/LucianoUCV/arxiv-web-scraping-sequential.git`
+git clone https://github.com/LucianoUCV/arxiv-web-scraping-sequential.git
 ```
 2. Navigate to the project directory: <br>
 ```bash
